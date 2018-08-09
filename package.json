@@ -1,0 +1,10 @@
+{
+  "main": "server.js",
+  "dependencies": {
+    "connect": "3.x",
+    "serve-static": "1.x"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
