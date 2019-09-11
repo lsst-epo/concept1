@@ -1,0 +1,450 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Space Portal - LSST EPO</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+	<!-- authorization -->
+	<script src="//cdn.auth0.com/js/auth0/9.5.1/auth0.min.js"></script>
+	<script src="assets/js/auth.js"></script>
+
+	<!-- bilingual localization -->
+	<!--
+	<script src="https://global.localizecdn.com/localize.js"></script>
+	<script>
+		! function (a) {
+			if (!a.Localize) {
+				a.Localize = {};
+				for (var e = ["translate", "untranslate", "phrase", "initialize", "translatePage", "setLanguage", "getLanguage", "detectLanguage", "getAvailableLanguages", "untranslatePage", "bootstrap", "prefetch", "on", "off"], t = 0; t < e.length; t++) a.Localize[e[t]] = function () {}
+			}
+		}(window);
+	</script>
+	<script>
+		if (document.location.hostname != "localhost" && document.location.hostname != "127.0.0.1") {
+			Localize.initialize({
+				key: 'ecEWqvh2Z6Ici',
+				rememberLanguage: true
+			});
+		}
+	</script>
+	-->
+	
+	<!-- analytics -->
+	<!--
+	<script>
+		! function () {
+			var analytics = window.analytics = window.analytics || [];
+			if (!analytics.initialize)
+				if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice.");
+				else {
+					analytics.invoked = !0;
+					analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "page", "once", "off", "on"];
+					analytics.factory = function (t) {
+						return function () {
+							var e = Array.prototype.slice.call(arguments);
+							e.unshift(t);
+							analytics.push(e);
+							return analytics
+						}
+					};
+					for (var t = 0; t < analytics.methods.length; t++) {
+						var e = analytics.methods[t];
+						analytics[e] = analytics.factory(e)
+					}
+					analytics.load = function (t) {
+						var e = document.createElement("script");
+						e.type = "text/javascript";
+						e.async = !0;
+						e.src = ("https:" === document.location.protocol ? "https://" : "http://") + "cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js";
+						var n = document.getElementsByTagName("script")[0];
+						n.parentNode.insertBefore(e, n)
+					};
+					analytics.SNIPPET_VERSION = "3.1.0";
+					analytics.load("3qQa9LYoSv8MWjNAdqISvPhJb0gpEOhZ");
+					analytics.page()
+				}
+		}();
+	</script>
+	-->
+	
+	<!-- temporary search engine block -->
+	<meta name="robots" content="noindex, nofollow, noarchive" />
+</head>
+
+<body class="homepage">
+
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<div id="header-wrapper">
+			<div id="header">
+
+				<!-- Corner Ribbon -->
+				<div class="ribbon"><span>ALPHA</span></div>
+
+				<!-- Logo -->
+				<h1><a href="alpha.html" class="stylized-header">Space Portal</a></h1>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li class="current"><a href="#">Home</a></li>
+						<li><a href="#resources">Glowworm</a></li>
+						<li><a href="#resources">Transient Events</a></li>
+						<li><a href="#resources">Educator Hub</a></li>
+						<li><a href="#resources">Citizen Projects</a></li>
+						<li><a href="#resources">API</a></li>
+						<li>
+							<a class="icon fa-language" href="#" title="switch language" id="language"><span class="label">Language</span></a>
+							<ul>
+								<li><a href="javascript:Localize.setLanguage('en')" class="language-option">English</a></li>
+								<li><a href="javascript:Localize.setLanguage('es')" class="language-option">Español</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="icon fa-unlock-alt" href="#" title="personalized options" id="account"><span class="label">Account</span></a>
+							<ul>
+								<li><a href="javascript:lock.show()" id="workspace"><var id="username">My</var> workspace</a></li>
+								<li><a href="javascript:lock.show()" id="auth">Login</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+
+				<!-- Banner -->
+				<section id="banner">
+					<header>
+						<h2>LSST Education &amp; Public Outreach</h2>
+						<h3>a treasure trove of astronomy resources</h3>
+					</header>
+				</section>
+
+				<!-- Intro -->
+				<section id="intro" class="container">
+					<div class="row">
+						<div class="3u 12u(mobile)">
+							<section class="first">
+								<span class="icon featured fa-globe" aria-hidden="true"></span>
+								<header>
+									<h2>General Public</h2>
+								</header>
+								<p><em>Astronomy compels the soul to look upwards and leads us from this world to another</em>
+									<br>~ Plato</p>
+							</section>
+						</div>
+						<div class="3u 12u(mobile)">
+							<section class="middle">
+								<span class="icon featured alt fa-flash" aria-hidden="true"></span>
+								<header>
+									<h2>Citizen Science</h2>
+								</header>
+								<p><em>Man explores the universe around him and calls the adventure Science</em>
+									<br>~ Edwin Hubble</p>
+							</section>
+						</div>
+						<div class="3u 12u(mobile)">
+							<section class="middle">
+								<span class="icon featured alt3 fa-star" aria-hidden="true"></span>
+								<header>
+									<h2>Classroom Research</h2>
+								</header>
+								<p><em>It is the supreme art of the teacher to awaken joy in creative expression and knowledge</em>
+									<br>~ Albert Einstein</p>
+							</section>
+						</div>
+						<div class="3u 12u(mobile)">
+							<section class="last">
+								<span class="icon featured alt2 fa-space-shuttle" aria-hidden="true"></span>
+								<header>
+									<h2>Informal Education</h2>
+								</header>
+								<p><em>Nothing in life is to be feared, it is only to be understood.  Now is the time to understand more</em>
+									<br>~ Marie Curie</p>
+							</section>
+						</div>
+					</div>
+					<footer>
+						<ul class="actions">
+							<li><a href="#resources" class="button big">Get Started<span class="screen-reader-only"> with Space Portal resources</span></a></li>
+							<li><a href="https://www.lsst.org/about/epo/links" class="button alt big">Learn More<span class="screen-reader-only"> about LSST EPO resources</span></a></li>
+						</ul>
+					</footer>
+				</section>
+
+			</div>
+		</div>
+
+		<!-- Main -->
+		<div id="main-wrapper">
+			<div id="resources" class="container">
+				<div class="row">
+					<div class="12u">
+
+						<!-- Resources -->
+						<section>
+							<header class="major">
+								<h2>Resources</h2>
+							</header>
+							<div class="row">
+								<div class="4u 12u(mobile)">
+									<section class="box">
+										<div class="image featured"><img src="images/pic02.jpg" alt="" /></div>
+										<header>
+											<h3>Glowworm</h3>
+										</header>
+										<p>A browser-based bilingual (Spanish/English) toolset leveraging cloud infrastructure for interacting with the public LSST data subset, including an interactive 2D viewer featuring: pan, zoom, contrast / brightness / color / filter controls, light curve data, point-of-interest metadata, associated alerts, and time-series display.</p>
+										<footer>
+											<a href="#" class="button alt">Find out more<span class="screen-reader-only"> about Glowworm</span></a>
+										</footer>
+									</section>
+								</div>
+								<div class="4u 12u(mobile)">
+									<section class="box">
+										<div class="image featured"><img src="images/pic06.jpg" alt="" /></div>
+										<header>
+											<h3>Transient Events</h3>
+										</header>
+										<p>A smartphone application that provides alert stream data in a mobile, graphical format.   Customizations and object details include: types and brightness, right ascension and declination coordinates, finder chart, and image cutout.  The app will initially use events from the <em>Catalina Real Time Survey</em> as precursor data.</p>
+										<footer>
+											<a href="#" class="button alt">Find out more<span class="screen-reader-only"> about Transient Events</span></a>
+										</footer>
+									</section>
+								</div>
+								<div class="4u 12u(mobile)">
+									<section class="box">
+										<div class="image featured"><img src="images/pic04.jpg" alt="" /></div>
+										<header>
+											<h3>Educator Hub</h3>
+										</header>
+										<p>A growing set of standards-based educational materials leveraging LSST data for formal and informal education coupled with professional development training to effectively incorporate the curricula into middle school, high school, and undergraduate classrooms as well as informal science centers and planetariums.</p>
+										<footer>
+											<a href="#" class="button alt">Find out more<span class="screen-reader-only"> about Educator Hub</span></a>
+										</footer>
+									</section>
+								</div>
+							</div>
+							<div class="row">
+								<div class="4u 12u(mobile)">
+									<section class="box">
+										<div class="image featured"><img src="images/pic05.jpg" alt="" /></div>
+										<header>
+											<h3>Citizen Projects</h3>
+										</header>
+										<p>Harnessing the collective power of citizen scientists from all over the world, key LSST data analysis challenges will be solved by crowdsourcing the work to thousands of volunteers. Projects may potentially include: detection of asteroids, identifying lensing or tidal streams, and analysis of light curve or alert stream data.</p>
+										<footer>
+											<a href="#" class="button alt">Find out more<span class="screen-reader-only"> about Citizen Projects</span></a>
+										</footer>
+									</section>
+								</div>
+								<div class="4u 12u(mobile)">
+									<section class="box">
+										<div class="image featured"><img src="images/pic03.jpg" alt="" /></div>
+										<header>
+											<h3>API</h3>
+										</header>
+										<p>A public Application Programming Interface (API) will allow users or apps to subscribe to time-sensitive, customized alerts. This will enable creative and serendipitous uses of the public LSST dataset by independant developers, amateur astronomers, planetarium software companies, and others.</p>
+										<footer>
+											<a href="#" class="button alt">Find out more<span class="screen-reader-only"> about API</span></a>
+										</footer>
+									</section>
+								</div>
+								<div class="4u 12u(mobile)">
+									<section class="box">
+										<div class="image featured"><img src="images/pic07.jpg" alt="" /></div>
+										<header>
+											<h3>Communications</h3>
+										</header>
+										<p>The LSST EPO and Communications groups work very closely together to ensure information flows between the LSST team, affiliates, scientific stakeholders, reporting agencies, and the media. Project accomplishments are regularly promoted via social media, conferences, events, and established media outlets.</p>
+										<footer>
+											<a href="#" class="button alt">Find out more<span class="screen-reader-only"> about Communications</span></a>
+										</footer>
+									</section>
+								</div>
+							</div>
+						</section>
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="12u">
+
+						<!-- Blog -->
+						<section>
+							<header class="major">
+								<h2>News</h2>
+							</header>
+							<div class="row">
+								<div class="6u 12u(mobile)">
+									<section class="box">
+										<div class="image featured"><img src="images/pic08.jpg" alt="" /></div>
+										<header>
+											<h3>Testing the LSST Lifting Platform @Pflow</h3>
+											<h4>21 July 2016</h4>
+										</header>
+										<p>PFlow Industries performed a successful setup and test on July 18th of their platform lift, which will be installed in the summit facility to transport the LSST mirrors and camera. The lift platform is pictured with the test load of approximately 140,000 lbs of concrete blocks.  As ...</p>
+										<footer>
+											<ul class="actions">
+												<li><a href="https://project.lsst.org/testing-lsst-lifting-platform-pflow" class="button icon fa-file-text">Continue Reading<span class="screen-reader-only"> Testing the LSST Lifting Platform @Pflow</span></a></li>
+												<li><a href="http://twitter.com/share?text=LSST%20News&hashtags=lsst&url=https%3A%2F%2Fproject.lsst.org%2Ftesting-lsst-lifting-platform-pflow" class="button alt icon fa-twitter twitter-popup">Tweet<span class="screen-reader-only"> Testing the LSST Lifting Platform @Pflow</span></a></li>
+											</ul>
+										</footer>
+									</section>
+								</div>
+								<div class="6u 12u(mobile)">
+									<section class="box">
+										<div class="image featured"><img src="images/pic09.jpg" alt="" /></div>
+										<header>
+											<h3>LSST@SPIE 2016</h3>
+											<h4>05 July 2016</h4>
+										</header>
+										<p>LSST was well represented at the 2016 SPIE meeting on Astronomical Telescopes &amp; Instrumentation in Edinburgh, Scotland last week with more than 40 LSST-related oral and poster presentations as well as an LSST booth in the exhibition hall.  LSST presentations will be made available through ...</p>
+										<footer>
+											<ul class="actions">
+												<li><a href="https://project.lsst.org/lsstspie-2016" class="button icon fa-file-text">Continue Reading<span class="screen-reader-only"> LSST@SPIE 2016</span></a></li>
+												<li><a href="http://twitter.com/share?text=LSST%20News&hashtags=lsst&url=https%3A%2F%2Fproject.lsst.org%2Flsstspie-2016" class="button alt icon fa-twitter twitter-popup">Tweet<span class="screen-reader-only"> LSST@SPIE 2016</span></a></li>
+											</ul>
+										</footer>
+									</section>
+								</div>
+							</div>
+						</section>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div id="footer-wrapper">
+			<section id="footer" class="container">
+				<div class="row">
+					<div class="8u 12u(mobile)">
+						<section>
+							<header>
+								<h2>Upcoming Events</h2>
+							</header>
+							<ul class="dates">
+								<li>
+									<span class="date">Aug <strong>15</strong></span>
+									<h3><a href="#">LSST 2016 Project and Community Workshop</a></h3>
+									<p>Tucson, AZ. Breakout sessions and informal collaboration. <a href="https://project.lsst.org/meetings/lsst2016/">More info<span class="screen-reader-only"> about the LSST 2016 Project and Community Workshop</span></a></p>
+								</li>
+								<li>
+									<span class="date">Aug <strong>16</strong></span>
+									<h3><a href="#">NSF/DOE Joint Status Review</a></h3>
+									<p>Tucson, AZ. NSF/DOE review of project status. <a href="https://project.lsst.org/reviews/hub/node/360">More info<span class="screen-reader-only"> about the NSF/DOE Joint Status Review</span></a></p>
+								</li>
+							</ul>
+						</section>
+					</div>
+					<div class="4u 12u(mobile)">
+						<section>
+							<header>
+								<h2>About Us</h2>
+							</header>
+							<div class="image featured"><img src="images/pic10.jpg" alt="" /></div>
+							<p>
+								The Education and Public Outreach (EPO) programs for the LSST are as ambitious as the telescope itself. LSST EPO will have a dynamic public web presence as well as a physical presence in classrooms and science centers promoting engagement in the research process.
+							</p>
+							<footer>
+								<a href="https://www.lsst.org/about/epo" class="button">Find out more<span class="screen-reader-only"> about LSST EPO</span></a>
+							</footer>
+						</section>
+					</div>
+				</div>
+				<div class="row">
+					<div class="4u 12u(mobile)">
+						<section>
+							<header>
+								<h2>LSST Links</h2>
+							</header>
+							<ul class="divided">
+								<li><a href="http://aura-astronomy.org/">AURA</a></li>
+								<li><a href="https://www.lsst.org/">Public &amp; Scientists</a></li>
+								<li><a href="https://project.lsst.org/">Project Team</a></li>
+								<li><a href="https://www.lsstcorporation.org/">LSST Corporation</a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="4u 12u(mobile)">
+						<section>
+							<header>
+								<h2>Related Links</h2>
+							</header>
+							<ul class="divided">
+								<li><a href="http://www.noao.edu/">NOAO</a></li>
+								<li><a href="http://flandrau.org/">Flandrau Planetarium</a></li>
+								<li><a href="http://www.adlerplanetarium.org/">Adler Planetarium</a></li>
+								<li><a href="https://www.zooniverse.org/">Zooniverse</a></li>
+								<li>
+									<a width="150" height="50" href="https://auth0.com/?utm_source=oss&utm_medium=gp&utm_campaign=oss" target="_blank" alt="Single Sign On & Token Based Authentication - Auth0"><img width="150" height="50" alt="JWT Auth for open source projects" src="//cdn.auth0.com/oss/badges/a0-badge-light.png" /></a>
+								</li>
+							</ul>
+						</section>
+					</div>
+					<div class="4u 12u(mobile)">
+						<section>
+							<header>
+								<h2>Media</h2>
+							</header>
+							<ul class="social">
+								<li><a class="icon fa-facebook" href="https://www.facebook.com/myLSST"><span class="label">Facebook</span></a></li>
+								<li><a class="icon fa-twitter" href="https://twitter.com/lsst"><span class="label">Twitter</span></a></li>
+								<li><a class="icon fa-linkedin" href="https://www.linkedin.com/company/2920425"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="contact">
+								<li>
+									<h3>Address</h3>
+									<p>
+										950 N Cherry Ave
+										<br /> Tucson, AZ 85719
+									</p>
+								</li>
+								<li>
+									<h3>Mail</h3>
+									<p><a href="https://www.lsst.org/contact">Contact Form</a></p>
+								</li>
+								<li>
+									<h3>Phone</h3>
+									<p>(520) 318-8005</p>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+				<div class="row">
+					<div class="12u">
+
+						<!-- Copyright -->
+						<div id="copyright">
+							<ul class="links">
+								<li>&copy; Copyright 2016 Association of Universities for Research in Astronomy, Inc.</li>
+								<li>Design: <a href="http://html5up.net" class="simple-link">HTML5 UP</a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</section>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/skel-viewport.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
