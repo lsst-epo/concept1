@@ -2,9 +2,11 @@
   "main": "server.js",
   "dependencies": {
     "connect": "3.x",
+    "gh-pages": "^2.1.1",
     "serve-static": "1.x"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "deploy": "gh-pages -d ./"
   }
 }
